@@ -1,0 +1,40 @@
++media-breakpoint-up(xs) {
+    .location_font {
+        font-size: 15px;
+    }
+    .tels_font {
+        font-size: 18px;
+    }
+    .tels__item_mb  {
+        background: #e4e4e4;
+        width: 250px;
+        position relative;
+        margin: 0 auto;
+        display: block;
+        padding: 10px 0;
+        margin-top: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #ccc;
+        }
+    }
+
+    .tels__item_lg--icon {
+        font-size: 12px;
+
+        &:before {
+            position absolute;
+            content: '';
+            background: url(../images/spritesheet.png) no-repeat -3px 0;
+            width: 35px;
+            height: 35px;
+            left: 25px;
+            top: 0px;
+
+
+        }
+    }
+   
+}

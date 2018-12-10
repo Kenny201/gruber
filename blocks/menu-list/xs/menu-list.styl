@@ -1,0 +1,51 @@
++media-breakpoint-up(xs) {
+    .page__menu-list,
+    .page__submenu-list {
+        text-align: center;
+        padding: 0;
+        list-style none;
+
+    }
+
+    .menu-list__item {
+        padding: 15px 0;
+        font-size: 1.6em;
+        font-weight: 800;
+    }
+
+    .submenu-list__item .link {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .menu-list__item a:hover,
+    .submenu-list__item a:hover {
+        color: #cccccc;
+    }
+
+    .submenu__link {
+        cursor pointer;
+    }
+
+    .page__submenu-list {
+        padding: 25px 0;
+        background-color: #E9E9E9;
+
+    }
+
+    .submenu-list__item {
+        font-size: .93em;
+        padding: 0;
+        font-weight: 400;
+
+        &--margin {
+            margin-bottom: 10px;
+        }
+    }
+
+    .hidden {
+        display: none;
+        height: auto;
+    }
+   
+}

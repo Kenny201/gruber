@@ -1,0 +1,48 @@
++media-breakpoint-up(lg) {
+      .tels-btn{
+        display: flex;
+       
+        align-items: center;
+        justify-content: space-around;
+        }
+        .tels__item-link{
+            text-decoration: none;
+            color:#111;}
+        .tels__item_p{
+          margin:0;}
+       .tels_font{
+        font-weight: 800;
+        }
+      .tels__callback {
+        
+        background: #e4e4e4;
+        width: 250px;
+        position relative;
+        text-align: center;
+        display: block;
+        padding: 10px 0;
+        
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #ccc;
+        }
+    
+        }
+       .tels__item_mb--icon {
+        font-size: 12px;
+
+        &:before {
+            position absolute;
+            content: '';
+            background: url(../images/spritesheet.png) no-repeat -3px 0;
+            width: 35px;
+            height: 35px;
+            left: 25px;
+            top: 0px;
+
+
+        }
+    }
+}

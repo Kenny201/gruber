@@ -1,0 +1,49 @@
++media-breakpoint-up(xl) {
+    .video {    
+        height: 600px;
+        
+    }
+   
+    .headline{
+        position relative;
+        top:50px;}
+    .video-text-name{
+        position relative;
+        top:-50px;
+        }
+    .headline,.video-text-name{
+        font-size: 37px;
+        }
+    .video-text-name{
+        font-weight: 700;}
+    
+    .video-text{
+        max-width: 500px;
+        height: 100%;
+        flex-direction: column
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        align-items: center;
+        }
+    .video-text__play{
+        width: 104px;
+        height: 104px;
+        position relative;
+        top:-100px;
+        background: url("../images/spritesheet.png") no-repeat -13px -215px;
+        &:before{
+            position: absolute;
+            content:'Смотреть видеоролик';
+            width:200px;
+            top:130px;
+            left:-50px;
+            }
+        }
+    .headline{
+        display: block;}
+    .video-text-name{
+        display: block;}
+   
+    
+}

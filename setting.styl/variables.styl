@@ -1,0 +1,46 @@
+// Grid breakpoints
+$container-max-widths = {
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1180px
+}
+$breakpoints = {
+  xs :  0,
+  sm : 576px,
+  md : 768px,
+  lg : 992px,
+  xl : 1200px
+}
+// Number of columns
+$columns = 12
+media-breakpoint-up($breakpoint)
+    $width = $breakpoints[$breakpoint]
+    if $width == 0
+        {block}
+    else
+        @media screen and (min-width $width)
+            {block}
+media-breakpoint-down($breakpoint)
+    if $breakpoint == xs
+        $breakpoint = sm
+    else if $breakpoint == sm
+        $breakpoint = md
+    else if $breakpoint == md
+        $breakpoint = lg
+    else if $breakpoint == lg
+        $breakpoint = xl
+
+    $width = $breakpoints[$breakpoint] - 1
+
+    @media screen and (max-width $width)
+        {block}
+create-container($container-max-widths) {
+    for $breakpoint, $width in $container-max-widths {
+        +media-breakpoint-up($breakpoint) {
+            .container {
+                max-width: $width;
+            }
+        }
+    }
+}

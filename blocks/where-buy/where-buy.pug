@@ -1,0 +1,21 @@
+.row
+    .where-buy.col
+        h2.where-buy__headline.link-b Где купить самогонный аппарат?
+        .where-buy__city-inner
+            mixin where-buy__city(city)
+                p.where-buy__city
+                    a(href="#").city__link.link.link-b=city
+            .where-buy__col.col--md-3
+                +where-buy__city('Москва')
+                +where-buy__city('Санкт-Петербург')
+                +where-buy__city('Тюмень')
+            .where-buy__col.col--md-3
+                +where-buy__city('Краснодар')
+                +where-buy__city('Казань')
+                +where-buy__city('Липецк')
+            .where-buy__col.col--md-3
+                +where-buy__city('Севастополь')
+
+
+
+    
